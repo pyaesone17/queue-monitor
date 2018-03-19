@@ -1,3 +1,5 @@
+#NOT_READY_YET
+
 ## Dashboard
 
 ![Demo](https://raw.githubusercontent.com/pyaesone17/queue-monitor/master/demo_1.png)
