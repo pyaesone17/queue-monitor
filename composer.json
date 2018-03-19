@@ -1,0 +1,60 @@
+{
+    "name": "pyaesone17/queue-monitor",
+    "type": "library",
+    "email" : "promise286@gmail.com",
+    "description": "Failed job queue monitoring for Laravel",
+    "keywords": [
+        "pyaesone17",
+        "Queue",
+        "Queue Monitor",
+        "Failed Jobs",
+        "Laravel Jobs"
+    ],
+    "homepage": "https://github.com/pyaesone17/queue-monitor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pyae Sone Nyein",
+            "email": "promise286@gmail.com",
+            "homepage": "https://pyaesone17.github.io/veve/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.1",
+        "guzzlehttp/guzzle": "^6.2",
+        "illuminate/support": "~5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pyaesone17\\QueueMonitor\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pyaesone17\\QueueMonitor\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pyaesone17\\App\\Providers\\QueueMonitor\\QueueMonitorServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
