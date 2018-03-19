@@ -1,4 +1,10 @@
+# Dashboard
+
 ![Demo](https://raw.githubusercontent.com/pyaesone17/queue-monitor/master/demo_1.png)
+
+# Management
+
+![Demo](https://raw.githubusercontent.com/pyaesone17/queue-monitor/master/demo_2.png)
 
 ## Usage
 
